@@ -1,0 +1,67 @@
+/* Increase logo size in navbar - comprehensive selectors */
+header a[href="/"] img,
+header a[href="/help-center"] img,
+header > nav > a > img,
+header nav a img,
+header a img[src*="logo"],
+header a img[src*="LOGO"],
+header a img[src*="logo-blue"],
+header a img[src*="CONTY"],
+a[href="/"] img,
+a[href="/help-center"] img,
+[class*="navbar"] a img,
+[class*="header"] a img,
+nav a[href="/"] img,
+header img,
+nav img {
+  height: 2rem !important;
+  min-height: 2rem !important;
+  width: auto !important;
+  max-height: 2rem !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  flex-shrink: 0 !important;
+}
+
+/* Increase navigation sidebar icons size */
+aside nav svg,
+aside nav img[src*="icons"],
+[class*="sidebar"] svg,
+[class*="sidebar"] img[src*="icons"],
+nav[class*="nav"] svg,
+nav[class*="nav"] img[src*="home02"],
+nav img[src*="home02"],
+nav img[src*="icons"],
+aside img[src*="icons"] {
+  width: 1.2rem !important;
+  height: 1.2rem !important;
+  min-width: 1.2rem !important;
+  min-height: 1.2rem !important;
+  max-width: 1.2rem !important;
+  max-height: 1.2rem !important;
+  vertical-align: middle !important;
+  margin-top: -0.0625rem !important;
+  position: relative !important;
+  top: -0.0625rem !important;
+}
+
+/* Help Center cover page styling - simple centered hero */
+body[data-page="/help-center/index"] h1,
+body[data-page="/help-center"] h1:first-child {
+  font-size: 3rem !important;
+  font-weight: 700 !important;
+  margin: 2rem auto 1.5rem auto !important;
+  line-height: 1.2 !important;
+  text-align: center !important;
+  max-width: 800px !important;
+}
+
+body[data-page="/help-center/index"] > main > article > p:first-of-type,
+body[data-page="/help-center"] > main > article > p:first-of-type {
+  font-size: 1.25rem !important;
+  text-align: center !important;
+  margin: 0 auto 3rem auto !important;
+  max-width: 600px !important;
+  color: #6b7280 !important;
+}
+

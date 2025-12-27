@@ -1,103 +1,93 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "mint",
-  "name": "Mint Starter Kit",
+  "theme": "almond",
+  "name": "Conty",
   "colors": {
-    "primary": "#16A34A",
-    "light": "#07C983",
-    "dark": "#15803D"
+    "primary": "#2984f6",
+    "light": "#5ba3f8",
+    "dark": "#1a6cd4"
   },
   "favicon": "/favicon.svg",
+  "styling": {
+    "css": ["/custom.css"]
+  },
   "navigation": {
     "tabs": [
       {
-        "tab": "Guides",
+        "tab": "Help Center",
         "groups": [
           {
-            "group": "Getting started",
+            "group": "Home",
+            "icon": "/icons/home02.svg",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "help-center/index"
             ]
           },
           {
-            "group": "Customization",
+            "group": "Criadores",
+            "icon": "/icons/user01.svg",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "help-center/creators/index",
+              "help-center/creators/getting-started",
+              "help-center/creators/campaigns",
+              "help-center/creators/payouts",
+              "help-center/creators/reputation",
+              "help-center/creators/troubleshooting"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Marcas",
+            "icon": "/icons/enterprise.svg",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "help-center/brands/index",
+              "help-center/brands/getting-started",
+              "help-center/brands/campaigns",
+              "help-center/brands/payments-credits",
+              "help-center/brands/reviews-revisions",
+              "help-center/brands/results-usage-rights",
+              "help-center/brands/troubleshooting"
             ]
           },
           {
-            "group": "AI tools",
+            "group": "Regras",
+            "icon": "/icons/rules.svg",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "API reference",
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
+              "help-center/rules/index",
+              "help-center/rules/how-it-works",
+              "help-center/rules/disputes",
+              "help-center/rules/fraud-safety",
+              "help-center/rules/policies"
             ]
           },
           {
-            "group": "Endpoint examples",
+            "group": "Contato",
+            "icon": "/icons/call.svg",
             "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
+              "help-center/contact"
             ]
           }
         ]
       }
     ],
     "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "href": "https://mintlify.com/docs",
-          "icon": "book-open-cover"
-        },
-        {
-          "anchor": "Blog",
-          "href": "https://mintlify.com/blog",
-          "icon": "newspaper"
-        }
-      ]
+      "anchors": []
     }
   },
   "logo": {
-    "light": "/logo/light.svg",
-    "dark": "/logo/dark.svg"
+    "light": "/logo/logo-blue.svg",
+    "dark": "/logo/LOGO - CONTY FUNDO PRETO.svg"
   },
   "navbar": {
     "links": [
       {
-        "label": "Support",
-        "href": "mailto:hi@mintlify.com"
+        "label": "GitHub",
+        "href": "https://github.com/Conty-App/"
       }
     ],
     "primary": {
       "type": "button",
       "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
+      "href": "https://dashboard.appconty.com"
     }
   },
   "contextual": {
@@ -114,9 +104,10 @@
   },
   "footer": {
     "socials": {
-      "x": "https://x.com/mintlify",
-      "github": "https://github.com/mintlify",
-      "linkedin": "https://linkedin.com/company/mintlify"
+      "x": "https://x.com/ContyAppOficial",
+      "github": "https://github.com/Conty-App/",
+      "linkedin": "https://www.linkedin.com/company/conty-app/"
     }
   }
 }
+
