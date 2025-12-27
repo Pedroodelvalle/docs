@@ -14,10 +14,10 @@
   "navigation": {
     "tabs": [
       {
-        "tab": "Help Center",
+        "tab": "Central de ajuda",
         "groups": [
           {
-            "group": "Home",
+            "group": "Início",
             "icon": "/icons/home02.svg",
             "pages": [
               "help-center/index"
@@ -64,6 +64,17 @@
             "icon": "/icons/call.svg",
             "pages": [
               "help-center/contact"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Lançamentos",
+        "groups": [
+          {
+            "group": "Atualizações",
+            "pages": [
+              "releases/index"
             ]
           }
         ]
