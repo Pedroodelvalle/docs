@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
+  "theme": "maple",
   "name": "Conty",
   "colors": {
     "primary": "#2984f6",
@@ -49,17 +49,6 @@
             ]
           },
           {
-            "group": "Regras",
-            "icon": "/icons/rules.svg",
-            "pages": [
-              "help-center/rules/index",
-              "help-center/rules/how-it-works",
-              "help-center/rules/disputes",
-              "help-center/rules/fraud-safety",
-              "help-center/rules/policies"
-            ]
-          },
-          {
             "group": "Contato",
             "icon": "/icons/call.svg",
             "pages": [
@@ -78,6 +67,18 @@
             ]
           }
         ]
+      },
+      {
+        "tab": "Notícias",
+        "groups": [
+          {
+            "group": "Notícias",
+            "pages": [
+              "news/index",
+              "news/conty-investimento-anjo"
+            ]
+          }
+        ]
       }
     ],
     "global": {
@@ -91,8 +92,12 @@
   "navbar": {
     "links": [
       {
-        "label": "GitHub",
-        "href": "https://github.com/Conty-App/"
+        "label": "Comunidade",
+        "href": "https://chat.whatsapp.com/JNh53P474Z9FTe8dSLA6TF"
+      },
+      {
+        "label": "Suporte",
+        "href": "/help-center/contact"
       }
     ],
     "primary": {
@@ -115,6 +120,7 @@
   },
   "footer": {
     "socials": {
+      "instagram": "https://instagram.com/conty.app",
       "x": "https://x.com/ContyAppOficial",
       "github": "https://github.com/Conty-App/",
       "linkedin": "https://www.linkedin.com/company/conty-app/"

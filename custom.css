@@ -45,4 +45,50 @@ aside img[src*="icons"] {
   top: -0.0625rem !important;
 }
 
+/* Sidebar icons should be black in light mode */
+html.light aside nav img[src*="icons"],
+html.light [class*="sidebar"] img[src*="icons"],
+html.light nav img[src*="icons"],
+html.light nav img[src*="home02"],
+[data-theme="light"] aside nav img[src*="icons"],
+[data-theme="light"] [class*="sidebar"] img[src*="icons"],
+[data-theme="light"] nav img[src*="icons"],
+[data-theme="light"] nav img[src*="home02"],
+:root:not(.dark) aside nav img[src*="icons"],
+:root:not(.dark) [class*="sidebar"] img[src*="icons"],
+:root:not(.dark) nav img[src*="icons"],
+:root:not(.dark) nav img[src*="home02"] {
+  filter: brightness(0) !important;
+}
+
+/* Change "on this page" to "nesta página" */
+aside h2,
+aside h3 {
+  position: relative;
+}
+
+aside h2::before,
+aside h3::before {
+  content: "Nesta página";
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+}
+
+/* Hide original "On this page" text by making it invisible and using ::before instead */
+aside [class*="toc"] > *:first-child,
+aside [class*="on-this-page"] > *:first-child,
+aside [class*="table-of-contents"] > *:first-child {
+  font-size: 0 !important;
+  visibility: hidden !important;
+}
+
+aside [class*="toc"] > *:first-child::before,
+aside [class*="on-this-page"] > *:first-child::before,
+aside [class*="table-of-contents"] > *:first-child::before {
+  content: "Nesta página" !important;
+  font-size: 0.875rem !important;
+  font-weight: 600 !important;
+  visibility: visible !important;
+  display: block !important;
+}
 
