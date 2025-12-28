@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "maple",
+  "theme": "aspen",
   "name": "Conty",
   "colors": {
     "primary": "#2984f6",
@@ -97,14 +97,9 @@
       },
       {
         "label": "Suporte",
-        "href": "/help-center/contact"
+        "href": "https://wa.me/5547996972772"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.appconty.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
