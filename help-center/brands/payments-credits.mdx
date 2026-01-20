@@ -1,11 +1,76 @@
 ---
-title: "Pagamentos e Créditos"
-description: "Sistema de créditos, taxas e formas de pagamento"
+title: "Pagamentos e Verba"
+description: "Sistema de verba, pagamentos e repasses para criadores"
 ---
 
-# Como funcionam os créditos na Conty
+# Como funcionam os pagamentos na Conty
 
-A Conty funciona com um sistema de créditos pré-pagos. Você adiciona saldo antes de criar campanhas, e esse saldo é consumido conforme os conteúdos são aprovados.
+A Conty funciona com um sistema de verba pré-paga. Você adiciona saldo antes de criar campanhas, e esse saldo é consumido conforme os conteúdos são aprovados.
+
+A partir de **20 de janeiro de 2026**, todos os pagamentos passam a ser processados através do **Stripe Connect**.
+
+<Warning>
+  **Dois modelos de pagamento em vigor:**
+  - **Campanhas anteriores a 20/01/2026** seguem o modelo antigo (V1) — repasse via PIX no dia 20
+  - **Campanhas a partir de 20/01/2026** seguem o novo modelo — Stripe Connect com prazo de 14-30 dias para o criador receber
+</Warning>
+
+---
+
+## Novo modelo de pagamentos (a partir de 20/01/2026)
+
+<CardGroup cols={2}>
+
+<Card title="Stripe Connect" icon="stripe-s">
+  Todos os pagamentos são processados pelo Stripe, uma das plataformas mais seguras do mundo.
+</Card>
+
+<Card title="Repasse automático" icon="arrows-rotate">
+  Quando você aprova um conteúdo, o valor é automaticamente repassado para a conta do criador.
+</Card>
+
+</CardGroup>
+
+### Como funciona o fluxo de pagamentos
+
+<Steps>
+  <Step title="Adicione verba à plataforma">
+    Deposite o valor desejado na sua conta Conty através de cartão de crédito, boleto ou PIX.
+  </Step>
+  <Step title="Crie sua campanha">
+    Defina o orçamento da campanha. O valor fica reservado do seu saldo.
+  </Step>
+  <Step title="Criadores entregam conteúdo">
+    Os criadores selecionados produzem e enviam os vídeos pelo app.
+  </Step>
+  <Step title="Aprove os conteúdos">
+    Revise e aprove os vídeos que atendem suas expectativas.
+  </Step>
+  <Step title="Repasse automático">
+    Ao aprovar, o valor correspondente é automaticamente repassado para a conta bancária do criador via Stripe Connect.
+  </Step>
+</Steps>
+
+<Info>
+  **Prazo de repasse para criadores:** Após a aprovação do conteúdo, o valor pode levar de **14 a 30 dias** para chegar na conta bancária do criador. Esse prazo segue as regras de processamento do Stripe para o Brasil.
+</Info>
+
+### Por que usamos Stripe Connect?
+
+O **Stripe Connect** é a solução de pagamentos para marketplaces mais utilizada no mundo. Ao usar o Stripe, garantimos:
+
+- **Segurança:** Criptografia de ponta e conformidade com regulamentações financeiras
+- **Transparência:** Rastreamento completo de todos os pagamentos e repasses
+- **Confiabilidade:** Processamento automático sem intervenção manual
+- **Proteção:** Mecanismos contra fraude tanto para marcas quanto para criadores
+
+---
+
+## Modelo antigo V1 (campanhas anteriores a 20/01/2026)
+
+<Note>
+  Este modelo se aplica **apenas** a campanhas e acordos firmados **antes de 20 de janeiro de 2026**. Se você tem campanhas ativas nesse modelo, os repasses continuarão seguindo as regras abaixo até a conclusão.
+</Note>
 
 <CardGroup cols={2}>
 
@@ -13,43 +78,43 @@ A Conty funciona com um sistema de créditos pré-pagos. Você adiciona saldo an
   Adicione créditos à sua carteira antes de criar campanhas. O saldo fica disponível para uso imediato.
 </Card>
 
-<Card title="Múltiplas formas de pagamento" icon="credit-card">
-  Pague via cartão de crédito, boleto bancário ou PIX — o que for mais conveniente para você.
+<Card title="Repasse no dia 20" icon="calendar">
+  Os criadores recebem via PIX no dia 20 de cada mês.
 </Card>
 
 </CardGroup>
 
 ---
 
-## Regras importantes sobre créditos
+## Regras importantes sobre a verba
 
 <Warning>
-  Os créditos são adicionados **up-front** (antecipadamente). Não é possível criar campanhas sem saldo disponível.
+  A verba é adicionada **antecipadamente**. Não é possível criar campanhas sem saldo disponível.
 </Warning>
 
 <AccordionGroup>
-  <Accordion title="Os créditos expiram?">
-    Os créditos têm validade de **12 meses** a partir da data de compra. Após esse período, o saldo não utilizado expira.
+  <Accordion title="A verba expira?">
+    A verba tem validade de **12 meses** a partir da data de depósito. Após esse período, o saldo não utilizado expira.
   </Accordion>
-  <Accordion title="Os créditos são reembolsáveis?">
-    **Não.** Os créditos não são reembolsáveis após a compra.
+  <Accordion title="A verba é reembolsável?">
+    **Não.** A verba não é reembolsável após o depósito.
     
-    A única exceção é quando **não foi encontrado nenhum criador** para sua campanha. Nesse caso, o valor reservado é devolvido como crédito.
+    A única exceção é quando **não foi encontrado nenhum criador** para sua campanha. Nesse caso, o valor reservado é devolvido ao seu saldo.
   </Accordion>
-  <Accordion title="Quando o saldo é consumido?">
-    O saldo da campanha só diminui **na aprovação dos conteúdos**. Isso significa que:
-    - Você pode recusar vídeos que não gostar sem perder créditos
+  <Accordion title="Quando a verba é consumida?">
+    O saldo só diminui **na aprovação dos conteúdos**. Isso significa que:
+    - Você pode recusar vídeos que não gostar sem perder verba
     - Só paga pelos conteúdos que realmente aprova
     - O valor fica reservado até a aprovação ou recusa
   </Accordion>
-  <Accordion title="Posso usar os créditos em várias campanhas?">
-    Sim. Os créditos ficam na sua conta e podem ser usados para criar quantas campanhas quiser, enquanto houver saldo disponível.
+  <Accordion title="Posso usar a verba em várias campanhas?">
+    Sim. A verba fica na sua conta e pode ser usada para criar quantas campanhas quiser, enquanto houver saldo disponível.
   </Accordion>
 </AccordionGroup>
 
 ---
 
-## Como adicionar créditos
+## Como adicionar verba
 
 <Steps>
   <Step title="Acesse o dashboard">
@@ -59,13 +124,13 @@ A Conty funciona com um sistema de créditos pré-pagos. Você adiciona saldo an
     No menu, acesse a seção `Cobrança` ou `Carteira`.
   </Step>
   <Step title="Escolha o valor">
-    Selecione o valor que deseja adicionar (mínimo R$10, máximo R$50.000 por transação).
+    Selecione o valor que deseja adicionar (mínimo R$200, máximo R$50.000 por transação).
   </Step>
   <Step title="Escolha o método de pagamento">
     Você pode pagar via cartão de crédito (aprovação instantânea), boleto (até 3 dias úteis) ou PIX (aprovação em segundos).
   </Step>
-  <Step title="Créditos disponíveis">
-    Após a confirmação do pagamento, os créditos estarão disponíveis para uso imediato na sua carteira.
+  <Step title="Verba disponível">
+    Após a confirmação do pagamento, a verba estará disponível para uso imediato.
   </Step>
 </Steps>
 
@@ -75,38 +140,47 @@ A Conty funciona com um sistema de créditos pré-pagos. Você adiciona saldo an
 
 | Regra | Detalhe |
 |-------|---------|
-| Valor mínimo por recarga | R$10 |
-| Valor máximo por recarga | R$50.000 |
+| Valor mínimo por depósito | R$200 |
+| Valor máximo por depósito | R$50.000 |
 | Validade | 12 meses |
 | Reembolso | Não (exceto se não houver criadores) |
 | Consumo | Apenas na aprovação do conteúdo |
 | Uso | Múltiplas campanhas |
 | Métodos de pagamento | Cartão, boleto ou PIX |
+| Processador (novo modelo) | Stripe Connect |
+| Prazo de repasse (novo modelo) | 14-30 dias após aprovação |
+| Prazo de repasse (modelo V1) | Dia 20 do mês seguinte |
 
 ---
 
 ## Dúvidas comuns
 
 <AccordionGroup>
+  <Accordion title="Como sei qual modelo de pagamento se aplica à minha campanha?">
+    Depende da data da campanha. Campanhas iniciadas antes de 20/01/2026 seguem o modelo V1 (repasse no dia 20). Campanhas a partir dessa data seguem o novo modelo (Stripe Connect, 14-30 dias).
+  </Accordion>
   <Accordion title="Posso adicionar qualquer valor?">
-    Sim, desde que esteja entre R$10 e R$50.000 por transação. Você pode fazer quantas recargas quiser.
+    Sim, desde que esteja entre R$200 e R$50.000 por transação. Você pode fazer quantos depósitos quiser.
   </Accordion>
   <Accordion title="Qual método de pagamento é mais rápido?">
     **PIX** tem aprovação em segundos. **Cartão de crédito** também é instantâneo. **Boleto** pode levar até 3 dias úteis para compensar.
   </Accordion>
   <Accordion title="Como acompanho meu saldo?">
-    O saldo disponível aparece no dashboard na seção de Carteira. Você também pode ver o histórico completo de transações: recargas, gastos com campanhas e estornos.
+    O saldo disponível aparece no dashboard na seção de Carteira. Você também pode ver o histórico completo de transações: depósitos, gastos com campanhas e estornos.
   </Accordion>
-  <Accordion title="E se meus créditos estiverem acabando durante uma campanha?">
-    Você receberá alertas quando o saldo estiver baixo. Adicione mais créditos para manter suas campanhas ativas.
+  <Accordion title="E se minha verba estiver acabando durante uma campanha?">
+    Você receberá alertas quando o saldo estiver baixo. Adicione mais verba para manter suas campanhas ativas.
   </Accordion>
   <Accordion title="O que acontece se eu aprovar um vídeo sem saldo suficiente?">
-    Você precisa ter saldo disponível para aprovar conteúdos. Se o saldo for insuficiente, adicione mais créditos antes de aprovar.
+    Você precisa ter saldo disponível para aprovar conteúdos. Se o saldo for insuficiente, adicione mais verba antes de aprovar.
+  </Accordion>
+  <Accordion title="Por que o criador demora 14-30 dias para receber no novo modelo?">
+    Esse prazo é definido pelo Stripe e segue as regulamentações do sistema financeiro brasileiro. É um período de segurança que protege todas as partes envolvidas na transação.
   </Accordion>
 </AccordionGroup>
 
 ---
 
 <Note>
-  **Dúvidas sobre pagamentos ou créditos?** Use o chat do dashboard ou entre em contato pelo [suporte](/help-center/contact).
+  **Dúvidas sobre pagamentos ou verba?** Use o chat do dashboard ou entre em contato pelo [suporte](/help-center/contact).
 </Note>

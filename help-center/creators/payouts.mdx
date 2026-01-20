@@ -5,11 +5,84 @@ description: "Quando e como você recebe seus pagamentos"
 
 # Como funcionam os pagamentos na Conty
 
-Você recebe pelos conteúdos que foram aprovados pelas marcas. Os pagamentos são feitos via PIX, sempre no dia 20 de cada mês.
+Você recebe pelos conteúdos que foram aprovados pelas marcas. A partir de **20 de janeiro de 2026**, todos os pagamentos passam a ser processados através do **Stripe Connect**.
+
+<Warning>
+  **Dois modelos de pagamento em vigor:**
+  - **Campanhas anteriores a 20/01/2026** seguem o modelo antigo (V1) — pagamento via PIX no dia 20
+  - **Campanhas a partir de 20/01/2026** seguem o novo modelo — Stripe Connect com prazo de 14-30 dias
+</Warning>
+
+---
+
+## Novo modelo de pagamentos (a partir de 20/01/2026)
+
+<CardGroup cols={2}>
+
+<Card title="Stripe Connect" icon="stripe-s">
+  Seus pagamentos são processados pelo Stripe, garantindo segurança e confiabilidade.
+</Card>
+
+<Card title="Depósito automático" icon="building-columns">
+  O valor é depositado automaticamente na sua conta bancária cadastrada.
+</Card>
+
+</CardGroup>
+
+### Como funciona o repasse
+
+Quando uma marca cria uma campanha na Conty, ela deposita uma verba na plataforma. Após a aprovação do seu conteúdo, parte desse valor é automaticamente repassada para você através do Stripe Connect.
 
 <Info>
-  **Este é o modelo atual de pagamentos.** Em breve, teremos uma wallet integrada no app onde você poderá ver seu saldo em tempo real e solicitar saques diretamente. Por enquanto, os pagamentos continuam sendo feitos via PIX no dia 20.
+  **Prazo de recebimento:** Após a aprovação do seu vídeo, o valor pode levar de **14 a 30 dias** para cair na sua conta bancária. Esse prazo segue as regras de processamento do Stripe para o Brasil.
 </Info>
+
+### Configure sua conta bancária
+
+Para receber seus pagamentos no novo modelo, você precisa cadastrar uma conta bancária no app da Conty. O Stripe suporta a maioria dos bancos brasileiros.
+
+<Steps>
+  <Step title="Acesse seu perfil">
+    No app da Conty, vá até a seção de configurações ou perfil.
+  </Step>
+  <Step title="Adicione sua conta bancária">
+    Informe os dados da sua conta: banco, agência, número da conta e tipo (corrente ou poupança).
+  </Step>
+  <Step title="Verifique sua identidade">
+    O Stripe pode solicitar documentos para verificar sua identidade. Isso é uma exigência regulatória e garante a segurança dos pagamentos.
+  </Step>
+  <Step title="Pronto para receber">
+    Após a verificação, seus pagamentos serão depositados automaticamente nessa conta.
+  </Step>
+</Steps>
+
+### Fluxo de pagamento (novo modelo)
+
+<Steps>
+  <Step title="Entrega o conteúdo">
+    Você finaliza e envia o vídeo pelo app.
+  </Step>
+  <Step title="Marca revisa">
+    A marca tem 72 horas para aprovar. Se não responder, é aprovado automaticamente.
+  </Step>
+  <Step title="Aprovação confirmada">
+    Com a aprovação, o Stripe inicia o processamento do pagamento.
+  </Step>
+  <Step title="Processamento">
+    O valor passa pelas verificações de segurança do Stripe (14-30 dias).
+  </Step>
+  <Step title="Recebe na conta">
+    O valor é depositado automaticamente na sua conta bancária cadastrada.
+  </Step>
+</Steps>
+
+---
+
+## Modelo antigo V1 (campanhas anteriores a 20/01/2026)
+
+<Note>
+  Este modelo se aplica **apenas** a campanhas e acordos firmados **antes de 20 de janeiro de 2026**. Se você tem campanhas ativas nesse modelo, os pagamentos continuarão seguindo as regras abaixo até a conclusão.
+</Note>
 
 <CardGroup cols={2}>
 
@@ -23,16 +96,47 @@ Você recebe pelos conteúdos que foram aprovados pelas marcas. Os pagamentos s�
 
 </CardGroup>
 
+### Fluxo de pagamento (modelo V1)
+
+<Steps>
+  <Step title="Entrega o conteúdo">
+    Você finaliza e envia o vídeo pelo app ou WhatsApp.
+  </Step>
+  <Step title="Marca revisa">
+    A marca tem 72 horas para aprovar. Se não responder, é aprovado automaticamente.
+  </Step>
+  <Step title="Aprovação confirmada">
+    Com a aprovação, seu pagamento entra na fila do próximo dia 20.
+  </Step>
+  <Step title="Recebe via PIX">
+    No dia 20, você recebe o valor das campanhas aprovadas no mês anterior.
+  </Step>
+</Steps>
+
+### Sobre o modelo V1
+
+<AccordionGroup>
+  <Accordion title="Como cadastro minha chave PIX?">
+    Você cadastra sua chave PIX no seu perfil dentro do app da Conty. Pode ser CPF, e-mail, telefone ou chave aleatória.
+  </Accordion>
+  <Accordion title="E se o dia 20 cair no fim de semana?">
+    O pagamento pode ser processado no próximo dia útil, mas geralmente cai no próprio dia 20.
+  </Accordion>
+  <Accordion title="Posso receber antes do dia 20?">
+    No modelo V1, não. Todos os pagamentos são consolidados e feitos no dia 20 de cada mês.
+  </Accordion>
+</AccordionGroup>
+
 ---
 
-## O que você precisa saber
+## O que você precisa saber (vale para ambos os modelos)
 
 <AccordionGroup>
   <Accordion title="Quando meu pagamento é confirmado?">
     O pagamento só é confirmado **após a aprovação final da marca**. Não é possível receber antes da aprovação, em nenhuma hipótese.
   </Accordion>
   <Accordion title="E se a marca demorar para aprovar?">
-    A marca tem **72 horas** para revisar e aprovar seu conteúdo. Se não responder nesse prazo, o vídeo é **aprovado automaticamente** e você recebe normalmente.
+    A marca tem **72 horas** para revisar e aprovar seu conteúdo. Se não responder nesse prazo, o vídeo é **aprovado automaticamente** e o processo de pagamento se inicia.
   </Accordion>
   <Accordion title="Recebo a mais se pedirem alterações?">
     Não. Ajustes fazem parte do processo e não geram pagamento adicional. Você só recebe se fizer as alterações dentro do prazo estabelecido pela marca (geralmente 72 horas).
@@ -73,7 +177,7 @@ Você recebe pelos conteúdos que foram aprovados pelas marcas. Os pagamentos s�
 - Mais credibilidade com as marcas
 
 **Se você não tem CNPJ:**
-- Você ainda pode receber normalmente via PIX
+- Você ainda pode receber normalmente
 - O pagamento será feito como pessoa física
 
 <Tip>
@@ -82,48 +186,32 @@ Você recebe pelos conteúdos que foram aprovados pelas marcas. Os pagamentos s�
 
 ---
 
-## Resumo do fluxo de pagamento
-
-<Steps>
-  <Step title="Entrega o conteúdo">
-    Você finaliza e envia o vídeo pelo app ou WhatsApp.
-  </Step>
-  <Step title="Marca revisa">
-    A marca tem 72 horas para aprovar. Se não responder, é aprovado automaticamente.
-  </Step>
-  <Step title="Aprovação confirmada">
-    Com a aprovação, seu pagamento entra na fila do próximo dia 20.
-  </Step>
-  <Step title="Recebe via PIX">
-    No dia 20, você recebe o valor das campanhas aprovadas no mês anterior.
-  </Step>
-</Steps>
-
----
-
 ## Dúvidas comuns
 
 <AccordionGroup>
-  <Accordion title="Posso receber antes do dia 20?">
-    No momento, não. Todos os pagamentos são consolidados e feitos no dia 20 de cada mês.
+  <Accordion title="Como sei qual modelo de pagamento se aplica a mim?">
+    Depende da data da campanha. Campanhas iniciadas antes de 20/01/2026 seguem o modelo V1 (PIX no dia 20). Campanhas a partir dessa data seguem o novo modelo (Stripe Connect, 14-30 dias).
   </Accordion>
-  <Accordion title="Como cadastro minha chave PIX?">
-    Você cadastra sua chave PIX no seu perfil dentro do app da Conty. Pode ser CPF, e-mail, telefone ou chave aleatória.
+  <Accordion title="Por que o novo modelo demora 14 a 30 dias?">
+    O Stripe processa pagamentos seguindo regulamentações financeiras do Brasil. Após a aprovação, os fundos passam por verificações de segurança e são liberados automaticamente para sua conta. Esse prazo protege todas as partes envolvidas.
   </Accordion>
-  <Accordion title="E se o dia 20 cair no fim de semana?">
-    O pagamento pode ser processado no próximo dia útil, mas geralmente cai no próprio dia 20.
+  <Accordion title="Quais bancos são aceitos no novo modelo?">
+    O Stripe aceita a maioria dos bancos brasileiros, incluindo os principais bancos tradicionais e digitais. Você pode cadastrar conta corrente ou poupança.
   </Accordion>
   <Accordion title="Existe valor mínimo para receber?">
-    Não. Qualquer valor aprovado será pago no dia 20, independente do montante.
+    Não. Qualquer valor aprovado será processado e depositado na sua conta.
   </Accordion>
   <Accordion title="Como acompanho meus ganhos?">
-    Você pode ver o histórico de campanhas e pagamentos diretamente no app da Conty.
+    Você pode ver o histórico de campanhas e o status dos pagamentos diretamente no app da Conty.
   </Accordion>
   <Accordion title="Preciso declarar esse dinheiro no imposto de renda?">
     Depende do seu caso. Se você é MEI, os valores entram na sua declaração anual do MEI. Se é pessoa física, pode precisar declarar dependendo do total anual. Consulte um contador para orientações específicas.
   </Accordion>
-  <Accordion title="Como vai funcionar a wallet no futuro?">
-    Estamos desenvolvendo uma wallet integrada no app. Com ela, você vai poder ver seu saldo atualizado em tempo real, acompanhar campanhas aprovadas e solicitar saques quando quiser — sem precisar esperar o dia 20. Quando estiver disponível, você vai precisar configurar sua conta bancária e verificar sua identidade no app.
+  <Accordion title="O que acontece se meus dados bancários estiverem errados?">
+    O pagamento pode falhar e você precisará corrigir os dados no app. Isso pode causar atrasos adicionais. Sempre confira os dados antes de salvar.
+  </Accordion>
+  <Accordion title="O Stripe é seguro?">
+    Sim. O Stripe é uma das maiores plataformas de pagamento do mundo, processando bilhões de dólares por ano. Seus dados são protegidos com criptografia de ponta e o Stripe segue todas as regulamentações financeiras brasileiras.
   </Accordion>
 </AccordionGroup>
 
