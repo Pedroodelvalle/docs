@@ -1,3 +1,113 @@
+/* ============================================
+   CURSOR POINTER PARA ELEMENTOS CLICÁVEIS
+   ============================================ */
+
+/* Reset global para todos elementos clicáveis */
+a,
+a *,
+button,
+button *,
+[role="button"],
+[role="button"] *,
+[type="button"],
+[type="submit"],
+input[type="button"],
+input[type="submit"] {
+  cursor: pointer !important;
+}
+
+/* Header e navbar */
+header a,
+header a *,
+header button,
+header button *,
+header [role="button"],
+header [role="button"] *,
+nav a,
+nav a *,
+[class*="navbar"] a,
+[class*="navbar"] a *,
+[class*="Navbar"] a,
+[class*="Navbar"] a *,
+[class*="header"] a,
+[class*="header"] a * {
+  cursor: pointer !important;
+}
+
+/* Cards clicáveis */
+[class*="Card"],
+[class*="Card"] *,
+[class*="card"],
+[class*="card"] *,
+article a,
+article a *,
+a[class*="Card"],
+a[class*="Card"] *,
+a[class*="card"],
+a[class*="card"] * {
+  cursor: pointer !important;
+}
+
+/* Tabs e navegação */
+[role="tab"],
+[role="tab"] *,
+[class*="tab"],
+[class*="tab"] *,
+[class*="Tab"],
+[class*="Tab"] *,
+aside a,
+aside a *,
+aside button,
+aside button * {
+  cursor: pointer !important;
+}
+
+/* Sidebar e menu */
+[class*="sidebar"] a,
+[class*="sidebar"] a *,
+[class*="Sidebar"] a,
+[class*="Sidebar"] a *,
+[class*="menu"] a,
+[class*="menu"] a *,
+[class*="Menu"] a,
+[class*="Menu"] a * {
+  cursor: pointer !important;
+}
+
+/* Elementos interativos */
+[onclick],
+[onclick] *,
+[class*="clickable"],
+[class*="clickable"] *,
+[class*="Clickable"],
+[class*="Clickable"] *,
+[class*="interactive"],
+[class*="interactive"] *,
+summary,
+summary *,
+details summary,
+details summary *,
+label[for],
+label[for] * {
+  cursor: pointer !important;
+}
+
+/* Botões primários do Mintlify */
+[class*="Button"],
+[class*="Button"] *,
+[class*="button"],
+[class*="button"] *,
+[class*="btn"],
+[class*="btn"] *,
+[class*="Btn"],
+[class*="Btn"] * {
+  cursor: pointer !important;
+}
+
+/* ============================================
+   LOGO
+   ============================================ */
+
 /* Increase logo size in navbar */
 header a[href="/"] img,
 header a[href="/help-center"] img,
@@ -71,9 +181,7 @@ html.light nav img[src*="home02"],
 [class*="toc"] p,
 [class*="TableOfContents"] h2,
 [class*="TableOfContents"] h3,
-[class*="on-this-page"],
-aside h2,
-aside h3 {
+[class*="on-this-page"] {
   font-size: 0 !important;
   visibility: hidden !important;
 }
@@ -83,9 +191,7 @@ aside h3 {
 [class*="toc"] p::after,
 [class*="TableOfContents"] h2::after,
 [class*="TableOfContents"] h3::after,
-[class*="on-this-page"]::after,
-aside h2::after,
-aside h3::after {
+[class*="on-this-page"]::after {
   content: "Nesta página" !important;
   font-size: 0.75rem !important;
   font-weight: 600 !important;
@@ -94,70 +200,28 @@ aside h3::after {
   letter-spacing: 0.05em !important;
 }
 
-/* "Next" → "Próximo" */
-a[rel="next"] span,
-[class*="next"] span,
-[class*="Next"] span,
-a[href][class*="pagination"] span:last-child {
-  font-size: 0 !important;
-}
-
-a[rel="next"]::after,
-[class*="next"]::after,
-[class*="Next"]::after {
-  content: "Próximo" !important;
-  font-size: inherit !important;
-}
-
-/* "Previous" → "Anterior" */
-a[rel="prev"] span,
-[class*="prev"] span,
-[class*="Prev"] span,
-[class*="previous"] span,
-[class*="Previous"] span {
-  font-size: 0 !important;
-}
-
-a[rel="prev"]::after,
-[class*="prev"]::after,
-[class*="Prev"]::after,
-[class*="previous"]::after,
-[class*="Previous"]::after {
-  content: "Anterior" !important;
-  font-size: inherit !important;
-}
-
-/* Pagination footer links - more specific selectors */
-nav[aria-label*="pagination"] a:first-child span,
-nav[aria-label*="Pagination"] a:first-child span,
-[class*="pagination"] a:first-child span,
-footer a[href] span:contains("Previous"),
-[class*="PageNavigation"] a:first-child span {
+/* Pagination footer links - specific selectors only */
+nav[aria-label*="pagination"] a[rel="prev"] span,
+nav[aria-label*="Pagination"] a[rel="prev"] span,
+nav[aria-label*="pagination"] a[rel="next"] span,
+nav[aria-label*="Pagination"] a[rel="next"] span,
+footer nav a[rel="prev"] span,
+footer nav a[rel="next"] span {
   visibility: hidden !important;
   font-size: 0 !important;
 }
 
-nav[aria-label*="pagination"] a:first-child::before,
-nav[aria-label*="Pagination"] a:first-child::before,
-[class*="pagination"] a:first-child::before,
-[class*="PageNavigation"] a:first-child::before {
+nav[aria-label*="pagination"] a[rel="prev"]::before,
+nav[aria-label*="Pagination"] a[rel="prev"]::before,
+footer nav a[rel="prev"]::before {
   content: "Anterior" !important;
   visibility: visible !important;
   font-size: 0.875rem !important;
 }
 
-nav[aria-label*="pagination"] a:last-child span,
-nav[aria-label*="Pagination"] a:last-child span,
-[class*="pagination"] a:last-child span,
-[class*="PageNavigation"] a:last-child span {
-  visibility: hidden !important;
-  font-size: 0 !important;
-}
-
-nav[aria-label*="pagination"] a:last-child::after,
-nav[aria-label*="Pagination"] a:last-child::after,
-[class*="pagination"] a:last-child::after,
-[class*="PageNavigation"] a:last-child::after {
+nav[aria-label*="pagination"] a[rel="next"]::after,
+nav[aria-label*="Pagination"] a[rel="next"]::after,
+footer nav a[rel="next"]::after {
   content: "Próximo" !important;
   visibility: visible !important;
   font-size: 0.875rem !important;

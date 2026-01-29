@@ -1,6 +1,6 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "aspen",
+  "theme": "almond",
   "name": "Conty - Central de Ajuda",
   "colors": {
     "primary": "#2984f6",
@@ -86,13 +86,31 @@
         ]
       },
       {
-        "tab": "Lançamentos",
+        "tab": "Atualizações",
         "groups": [
           {
-            "group": "Atualizações",
+            "group": "Início",
             "pages": [
-              "releases/index",
-              "releases/v1.0"
+              "releases/index"
+            ]
+          },
+          {
+            "group": "App de Creators",
+            "pages": [
+              "releases/creators/v1.0.7",
+              "releases/creators/v1.0.6",
+              "releases/creators/v1.0.5",
+              "releases/creators/v1.0.4",
+              "releases/creators/v1.0.3",
+              "releases/creators/v1.0.2",
+              "releases/creators/v1.0.1",
+              "releases/creators/v1.0.0"
+            ]
+          },
+          {
+            "group": "Software das Marcas",
+            "pages": [
+              "releases/brands/v1.0.0"
             ]
           }
         ]
@@ -118,14 +136,15 @@
   "navbar": {
     "links": [
       {
-        "label": "Comunidade",
-        "href": "https://chat.whatsapp.com/JNh53P474Z9FTe8dSLA6TF"
-      },
-      {
-        "label": "Suporte",
-        "href": "https://wa.me/5547996972772"
+        "label": "App de Creators",
+        "href": "https://appconty.com"
       }
-    ]
+    ],
+    "primary": {
+      "type": "button",
+      "label": "Dashboard para Marcas",
+      "href": "https://dashboard.appconty.com"
+    }
   },
   "contextual": {
     "options": [
