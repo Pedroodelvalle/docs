@@ -1,0 +1,46 @@
+---
+title: "v1.1.0"
+description: "Taxa de plataforma, bônus de primeiro depósito e melhorias na experiência - 29 de Janeiro de 2026"
+---
+
+<Info>
+  **29 de Janeiro de 2026**
+</Info>
+
+## Novidades
+
+### Taxa de plataforma na recarga de saldo
+
+- Ao adicionar saldo na carteira, é aplicada uma taxa de plataforma; o valor creditado corresponde ao valor líquido após a taxa
+- Na tela de recarga, o resumo mostra de forma clara o valor a pagar, a taxa e o valor que será creditado
+
+### Bônus de primeiro depósito
+
+- Novo usuário ganha +10% de créditos extras no primeiro depósito (calculado sobre o valor já creditado após a taxa)
+- Webhook da Stripe aplica o bônus automaticamente no primeiro top-up; faturas e transações registram o valor do bônus
+
+---
+
+## Melhorias
+
+### Experiência para novos usuários (saldo zero)
+
+- Em vez de alertas vermelhos de "Saldo muito baixo", usuários elegíveis ao bônus veem um card roxo convidativo: "Bônus de boas-vindas!" com destaque para o +10% extra
+- Sidebar e dashboard exibem "Resgatar bônus" e "Ganhe créditos bônus!" para estimular o primeiro depósito
+- Drawer de adicionar saldo mostra o bônus e o valor total que será creditado quando o usuário é elegível
+
+### Carteira e criação de conta
+
+- Tratamento de erros ao criar carteira: mensagens mais claras, suporte a condição de corrida (wallet já existente) e violação de foreign key (enterprise inexistente)
+- Layout de páginas privadas só chama a API de carteira quando há `enterpriseId` válido, evitando falhas para novos usuários
+
+### Faturas na página de Cobrança
+
+- O ícone ao lado de cada fatura agora abre corretamente a fatura ou o recibo do pagamento na Stripe (nova aba)
+- Funciona tanto para faturas de assinatura quanto para recargas de saldo
+
+### Paginação na aba Interessados das campanhas
+
+- A aba "Interessados" passou a ter paginação (20 itens por página), permitindo ver todas as candidaturas além do limite anterior de 100
+- Controles Anterior/Próximo e texto "Mostrando X–Y de Z interessados"; a página é refletida na URL (`applicationsPage`)
+- O aviso amarelo de criadores pendentes exibe o número total real de candidaturas pendentes, e não apenas os da página atual
