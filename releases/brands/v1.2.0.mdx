@@ -1,0 +1,46 @@
+---
+title: "v1.2.0"
+description: "Coleta automática de métricas do Instagram e exibição na tabela de aprovados - 31 de Janeiro de 2026"
+---
+
+<Info>
+  **31 de Janeiro de 2026**
+</Info>
+
+## Novidades
+
+### Coleta automática de métricas do Instagram
+
+- O sistema agora coleta automaticamente curtidas, comentários, visualizações e plays dos Reels postados pelos criadores
+- As métricas são atualizadas a cada 2 horas para posts recentes (menos de 24h) e a cada 24 horas para posts mais antigos
+- Os dados ficam disponíveis na aba de vídeos aprovados da campanha
+
+### Exibição de métricas na tabela de vídeos aprovados
+
+- Adicionadas colunas de Views, Curtidas e Comentários na aba "Aprovados" das campanhas de Reels em Collab
+- As métricas aparecem apenas quando pelo menos um vídeo da tabela já foi postado (campo URL preenchido)
+- Valores são exibidos em formato compacto (ex: 1,5 mil, 25 mil, 1 mi) para melhor legibilidade
+
+![Métricas na tabela de aprovados](https://wilmlcoeaxnakramxvpr.supabase.co/storage/v1/object/public/blog-images/foto-changelog.png)
+
+---
+
+## Melhorias
+
+### Tratamento de dados de métricas
+
+- Corrigido problema onde alguns Reels mostravam curtidas negativas ou zeradas incorretamente
+- Views agora exibem o valor correto mesmo quando o Instagram não retorna a métrica de visualizações (usa plays como alternativa)
+- O sistema deixa de tentar coletar dados de posts que falham repetidamente, evitando requisições desnecessárias
+
+### Correção de métricas no Dashboard
+
+- Views, Curtidas e Comentários agora exibem apenas dados de vídeos vinculados a campanhas
+- Removidos dados órfãos que inflavam incorretamente os totais
+- Filtro por campanha agora atualiza corretamente todas as métricas e gráficos
+
+### Tooltips explicativos nos cards do Dashboard
+
+- Adicionados tooltips informativos nos cards de métricas menos intuitivos
+- Taxa de Engajamento explica a fórmula e o que é considerado um bom valor (1-3%)
+- Custo Médio, Valor Aprovado, Valor Pendente e status de vídeos incluem descrições claras
