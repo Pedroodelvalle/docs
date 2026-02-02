@@ -110,10 +110,11 @@
           {
             "group": "Software das Marcas",
             "pages": [
-              "releases/brands/v1.3.0",
-              "releases/brands/v1.2.0",
-              "releases/brands/v1.1.0",
-              "releases/brands/v1.0.0"
+              "releases/brands/1.0.4",
+              "releases/brands/1.0.3",
+              "releases/brands/1.0.2",
+              "releases/brands/1.0.1",
+              "releases/brands/1.0.0"
             ]
           }
         ]
