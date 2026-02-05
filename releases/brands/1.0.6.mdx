@@ -1,0 +1,48 @@
+---
+title: "1.0.6"
+description: "Chat em tempo real reformulado, interface mais fluida e correções de sincronização - 05 de Fevereiro de 2026"
+---
+
+<Info>
+  **05 de Fevereiro de 2026**
+</Info>
+
+## Novidades
+
+### Chat em tempo real completamente reformulado
+
+- Mensagens agora aparecem instantaneamente para ambos os lados (marca e criador)
+- Implementado sistema de "optimistic UI": sua mensagem aparece imediatamente enquanto é enviada ao servidor
+- Indicador visual de status: ícone de relógio enquanto envia, check quando entregue
+- Deduplicação inteligente evita mensagens duplicadas mesmo em conexões instáveis
+
+---
+
+## Melhorias
+
+### Interface do chat mais fluida e moderna
+
+- Todos os elementos clicáveis agora mostram cursor de mão (pointer), deixando claro que são interativos
+- Transições suaves ao passar o mouse sobre conversas e botões (150ms)
+- Microinterações de scale nos itens da lista de conversas e filtros
+- Visual mais limpo: removido padrão de fundo desnecessário da área de mensagens
+
+### Layout do chat corrigido
+
+- O campo de digitar mensagem agora está sempre visível, sem precisar rolar a página
+- Estrutura fixa: cabeçalho no topo, mensagens com scroll interno, input fixo no rodapé
+- Funciona corretamente em todas as resoluções: desktop (1920px, 1440px, 1366px) e tablet
+
+---
+
+## Correções
+
+### Sincronização de mensagens entre abas
+
+- Mensagens enviadas em uma aba agora aparecem corretamente em outras abas abertas
+- Corrigido bug onde mensagens enviadas pela marca não apareciam em tempo real
+
+### Ordenação da lista de conversas
+
+- A última mensagem enviada agora aparece corretamente no topo da lista
+- Preview da última mensagem atualiza instantaneamente após envio
